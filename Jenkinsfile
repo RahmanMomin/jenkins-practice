@@ -4,8 +4,7 @@ pipeline {
     stage('Checkout Code') {
       agent any
       steps {
-        git branch: 'main', url: 'https://github.com/RahmanMomin/jenkins-practice
-.git' 
+        git branch: 'main', url: 'https://github.com/RahmanMomin/jenkins-practice.git' 
       }
     }
     stage('Back-end') {
