@@ -3,12 +3,13 @@ pipeline {
   stages {
     stage('Back-end') {
       agent {
-        docker { image 'maven:3.8.1-adoptopenjdk-11' }
+        docker { image 'openjdk:17' }
       }
       steps {
         sh '''
           cd backend
-          mvn clean compile exec:java -Dexec.mainClass="App" 
+          javac App.java 
+          javac App.java
         '''
       }
     }
