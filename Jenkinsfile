@@ -26,7 +26,7 @@ pipeline {
       steps {
         sh '''
           cd frontend
-          node index.js
+          node app.js
         '''
       }
     }
